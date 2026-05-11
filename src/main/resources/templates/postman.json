@@ -1,0 +1,87 @@
+{
+  "info": {
+    "_postman_id": "2ca89ba8-6df6-41e5-8372-c26f75388edd",
+    "name": "exercicio_spring",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54507733",
+    "_collection_link": "https://go.postman.co/collection/54507733-2ca89ba8-6df6-41e5-8372-c26f75388edd?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "inserir",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n{\r\n    \"nome\":\"Ana\",\r\n    \"curso\":\"Des. Sistemas\",\r\n    \"matricula\":\"204001\"\r\n\r\n    },\r\n\r\n{   \r\n    \"nome\":\"Carlos\",\r\n    \"curso\": \"Redes\",\r\n    \"matricula\":\"2024002\"\r\n\r\n}\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8085/alunos",
+          "host": [
+            "localhost"
+          ],
+          "port": "8085",
+          "path": [
+            "alunos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listar",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8085/alunos",
+          "host": [
+            "localhost"
+          ],
+          "port": "8085",
+          "path": [
+            "alunos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "excluir",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8085/alunos/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8085",
+          "path": [
+            "alunos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
